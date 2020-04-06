@@ -30,25 +30,6 @@
   <?php endif; ?>
 
   <footer class="entry-footer">
-    <?php
-    if ( 'post' == get_post_type() ) :
-      // Hide category and tag text for pages on Search
-    ?>
-      <?php
-        /* translators: used between list items, there is a space after the comma */
-        $tags_list = get_the_tag_list( '', __( ', ', 'asu-wordpress-web-standards-theme' ) );
-        if ( $tags_list ) :
-      ?>
-      <span class="tags-links">
-      <?php printf( __( 'Tagged %1$s', 'asu-wordpress-web-standards-theme' ), $tags_list ); ?>
-      </span>
-      <?php endif; // End if $tags_list ?>
-    <?php endif; // End if 'post' == get_post_type() ?>
-
-    <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-    <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'asu-wordpress-web-standards-theme' ), __( '1 Comment', 'asu-wordpress-web-standards-theme' ), __( '% Comments', 'asu-wordpress-web-standards-theme' ) ); ?></span>
-    <?php endif; ?>
-
     <?php edit_post_link( __( 'Edit', 'asu-wordpress-web-standards-theme' ), '<span class="edit-link">', '</span>' ); ?>
   </footer><!-- .entry-footer -->
 </article><!-- #post-## -->
