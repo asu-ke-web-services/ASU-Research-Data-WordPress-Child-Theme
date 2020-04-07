@@ -27,7 +27,7 @@
       $tag_list = get_the_tag_list( '', __( ', ', 'asu-wordpress-web-standards-theme' ) );
 
       if ( '' != $tag_list ) {
-        $meta_text = __( 'Keywords: %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'asu-wordpress-web-standards-theme' );
+        $meta_text = __( 'Keywords: %2$s.', 'asu-wordpress-web-standards-theme' );
       }
 
       printf(
