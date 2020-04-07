@@ -30,7 +30,7 @@ get_header(); ?>
           <div class="fdt-home-container fdt-home-column-content clearfix panel-panel row-fluid container">
             <div class="fdt-home-column-content-region fdt-home-row panel-panel span12">
               <div class="panel-pane pane-fieldable-panels-pane pane-fpid-12 pane-bundle-text">
-                <h1 class="pane-title" style="color:"><?php echo category_description(); ?></h1>
+                <h1 class="pane-title" style="color:"><?php echo strip_tags(category_description()); ?></h1>
               </div>
             </div>
           </div>
