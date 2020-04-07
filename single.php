@@ -38,7 +38,7 @@ $custom_fields = get_post_custom();
 
           <div class="<?php echo esc_attr( $content_class ); ?>">
             <?php 
-              $previous = "javascript:history.go(-1)";
+              $previous = "window.history.back();";
               if(isset($_SERVER['HTTP_REFERER'])) {
                   $previous = $_SERVER['HTTP_REFERER'];
               }
