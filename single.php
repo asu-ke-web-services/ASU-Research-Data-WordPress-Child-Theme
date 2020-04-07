@@ -43,7 +43,7 @@ $custom_fields = get_post_custom();
               //     $previous = $_SERVER['HTTP_REFERER'];
               // }
             ?>
-            <a href="/covid-19/">&lt;&nbsp;Back to results</a>
+            <p><a href="/covid-19/">&lt;&nbsp;Back to results</a></p>
             <header class="entry-header">
               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
             </header><!-- .entry-header -->
