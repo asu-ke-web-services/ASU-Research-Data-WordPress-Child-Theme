@@ -27,7 +27,7 @@
       $tag_list = get_the_tag_list( '', __( ', ', 'asu-wordpress-web-standards-theme' ) );
 
       if ( '' != $tag_list ) {
-        $meta_text = __( 'Keywords: %2$s.', 'asu-wordpress-web-standards-theme' );
+        $meta_text = __( '<h3>Keywords:</h3><p>%2$s.</p>', 'asu-wordpress-web-standards-theme' );
       }
 
       printf(
