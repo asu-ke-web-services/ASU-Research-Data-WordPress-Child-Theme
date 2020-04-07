@@ -23,13 +23,20 @@ get_header(); ?>
 
 <div id="main-wrapper" class="clearfix">
   <div class="clearfix">
-    <?php
-    $hero_rendered = ( false !== strpos( category_description(), 'section class="hero' ) );
-    // Render category description here if hero/page_feature shortcode processed
-    if ( $hero_rendered ) {
-      echo category_description();
-    }
-    ?>
+
+    <section class="hero hero-bg-img hero-action-call" style="background-image:url(https://static.sustainability.asu.edu/sosMS-uploads/sites/72/2020/04/covid-banner-hero-scaled.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="fdt-home-container fdt-home-column-content clearfix panel-panel row-fluid container">
+            <div class="fdt-home-column-content-region fdt-home-row panel-panel span12">
+              <div class="panel-pane pane-fieldable-panels-pane pane-fpid-12 pane-bundle-text">
+                <h1 class="pane-title" style="color:"><?php echo category_description(); ?></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div id="content" class="site-content">
       <?php echo do_shortcode( '[asu_breadcrumbs]' ); ?>
