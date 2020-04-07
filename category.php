@@ -23,7 +23,7 @@ get_header(); ?>
 
 <div id="main-wrapper" class="clearfix">
   <div class="clearfix">
-
+    <?php $hero_rendered = true; ?>
     <section class="hero hero-bg-img hero-action-call" style="background-image:url(https://static.sustainability.asu.edu/sosMS-uploads/sites/72/2020/04/covid-banner-hero-scaled.jpg)">
       <div class="container">
         <div class="row">
