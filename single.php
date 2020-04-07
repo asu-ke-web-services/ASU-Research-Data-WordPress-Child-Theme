@@ -38,12 +38,12 @@ $custom_fields = get_post_custom();
 
           <div class="<?php echo esc_attr( $content_class ); ?>">
             <?php 
-              $previous = "window.history.back();";
-              if(isset($_SERVER['HTTP_REFERER'])) {
-                  $previous = $_SERVER['HTTP_REFERER'];
-              }
+              // $previous = "window.history.back();";
+              // if(isset($_SERVER['HTTP_REFERER'])) {
+              //     $previous = $_SERVER['HTTP_REFERER'];
+              // }
             ?>
-            <a href="<?php $previous ?>">&lt;&nbsp;Back to results</a>
+            <a href="/covid-19/">&lt;&nbsp;Back to results</a>
             <header class="entry-header">
               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
             </header><!-- .entry-header -->
